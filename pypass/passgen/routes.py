@@ -2,7 +2,7 @@ from fastapi import APIRouter
 
 from .passgen import PasswordGenerator
 
-passgen = APIRouter(prefix="passgen")
+passgen = APIRouter(prefix="/passgen")
 
 
 @passgen.post("")

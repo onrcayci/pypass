@@ -12,6 +12,6 @@ class PasswordGenerator:
         # Generate random number that will be used for password generation
         data: bytes = urandom(length)
         # Create the hash instance
-        generator = blake2b(data, salt=salt, digest_size=length)
-        password: str = generator.digest().decode(encoding="utf-8")
+        generator = blake2b(data, salt=salt, digest_size=length // 2)
+        password: str = generator.hexdigest()
         return password
