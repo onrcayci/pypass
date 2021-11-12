@@ -1,0 +1,26 @@
+# Git files
+.git/
+.gitignore
+
+# Python Virtual Environment
+venv/
+env/
+.venv/
+.env/
+
+# Python Cache
+__pycache__/
+
+# README
+README.*
+
+# Poetry files
+poetry.lock
+pyproject.toml
+
+# Docker files
+Dockerfile
+docker-compose.yml
+docker-compose.yaml
+compose.yml
+compose.yaml
