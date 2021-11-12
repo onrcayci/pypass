@@ -1,12 +1,11 @@
-from typing import Dict
 from fastapi import APIRouter
 
 from .passgen import PasswordGenerator
 
-passgen = APIRouter(prefix="/passgen")
+passgen_router = APIRouter(prefix="/passgen")
 
 
-@passgen.post("")
+@passgen_router.post("")
 async def generate_password(body: dict = {"length": 10}):
     print(body)
     generator = PasswordGenerator()
