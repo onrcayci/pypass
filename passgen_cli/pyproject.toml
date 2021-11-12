@@ -1,13 +1,21 @@
 [tool.poetry]
-name = "passgen_cli"
+name = "passgen-cli"
 version = "0.1.0"
 description = ""
 authors = ["Onur Cayci <onur.cayci@outlook.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+typer = "^0.4.0"
+passgen = { path = "/home/ocayci/.software/python/pypass/passgen/dist/passgen-0.1.0-py3-none-any.whl" }
 
 [tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+mypy = "^0.910"
+autopep8 = "^1.6.0"
+
+[tool.poetry.scripts]
+passgen = "passgen_cli:passgen_cli"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
