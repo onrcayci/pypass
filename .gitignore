@@ -19,3 +19,8 @@ __pycache__
 
 # Python requirements file
 requirements.txt
+
+# Build directories
+dist/
+bin/
+build/
