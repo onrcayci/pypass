@@ -16,3 +16,6 @@ __pycache__
 
 # Pytest cache
 .pytest_cache
+
+# Python requirements file
+requirements.txt
